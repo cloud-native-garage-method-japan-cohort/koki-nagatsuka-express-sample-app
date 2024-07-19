@@ -5,6 +5,8 @@ FROM quay.io/upslopeio/node-alpine
 # RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile"
 WORKDIR /usr/src/app
 
+USER node
+
 # COPY package.json and package-lock.json into root of WORKDIR
 COPY package*.json ./
 
