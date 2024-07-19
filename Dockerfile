@@ -11,8 +11,6 @@ COPY package*.json ./
 # Executes commands
 RUN npm ci
 
-RUN npm config set cache /usr/src/app/.npm
-
 # Copies files from source to destination, in this case the root of the build context
 # into the root of the WORKDIR
 COPY . .
